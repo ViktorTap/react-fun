@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+input[type="text"] {
+  width: 425px;
+  margin-top: 15px;
+  border: 3px solid;
+  border-radius: 15px;
+  outline: none;
+  height: 35px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 32px;
+}
+
+input[type="text"]:focus {
+  border-color: lightblue;
+  outline: none;
+}
+
+input[type="text"]:hover {
+  border-color: lightblue;
+  outline: none;
+}
+
+p {
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  font-size: 48px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  opacity: 1;
+}
+
+.app--main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.square--main {
+  border: 3px solid lightblue;
+  border-radius: 15px;
+  height: 450px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.square--main:hover > p {
+  opacity: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .square--main {
+    height: 75%;
+    width: 75%;
+  }
+
+  input[type="text"] {
+    width: 75%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
